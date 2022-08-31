@@ -1,0 +1,12 @@
+<div>
+  <div class="white-text">Search for a stock ticker</div>
+  <input
+    id="typeahead-basic"
+    type="text"
+    class="form-control"
+    placeholder="Ex. AAPL"
+    [(ngModel)]="model"
+    [ngbTypeahead]="search"
+  />
+  <pre>Model: {{ model | json }}</pre>
+</div>
