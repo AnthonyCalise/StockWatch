@@ -12,7 +12,6 @@ import { WatchlistComponent } from './components/watchlist/watchlist.component';
 import { FavoritesComponent } from './components/favorites/favorites.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MatInputModule } from '@angular/material/input';
-import { TypeaheadComponent } from './components/typeahead/typeahead.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {
@@ -28,7 +27,6 @@ import { HttpClientModule } from '@angular/common/http';
     WatchlistComponent,
     FavoritesComponent,
     DashboardComponent,
-    TypeaheadComponent,
     GraphComponent,
   ],
   imports: [
