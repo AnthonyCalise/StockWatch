@@ -1,3 +1,18 @@
 <div class="dashboard-container">
-  <app-typeahead></app-typeahead>
+  <div class="typeahead-container">
+    <div>
+      <div class="white-text">Search for a stock ticker</div>
+      <input
+        id="typeahead-basic"
+        type="text"
+        class="form-control"
+        placeholder="Ex. AAPL"
+        [(ngModel)]="tickerInput"
+        [ngbTypeahead]="search"
+      />
+      <!-- <pre>Model: {{ tickerInput | json }}</pre> -->
+    </div>
+  </div>
+  <button (click)="stockSelected = true">Submit</button>
+  <app-graph *ngIf="stockSelected" [selectedStock]="tickerInput"></app-graph>
 </div>

@@ -1,3 +1,4 @@
+import { GraphComponent } from './components/graph/graph.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,6 +15,11 @@ import { MatInputModule } from '@angular/material/input';
 import { TypeaheadComponent } from './components/typeahead/typeahead.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {
+  IgxFinancialChartModule,
+  IgxLegendModule,
+} from 'igniteui-angular-charts';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,6 +29,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FavoritesComponent,
     DashboardComponent,
     TypeaheadComponent,
+    GraphComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +40,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatInputModule,
     FormsModule,
     NgbModule,
+    IgxFinancialChartModule,
+    IgxLegendModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
